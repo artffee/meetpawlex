@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PawLex — AI Platform for Pet Businesses</title>
+  <meta name="description" content="PawLex is the AI-powered compliance, contracts & operations platform built for pet businesses. Join the waitlist today."/>
+  <meta property="og:title" content="PawLex — AI for Pet Businesses"/>
+  <meta property="og:description" content="Contracts, compliance & operations intelligence for groomers, vets, trainers & more."/>
+  <meta property="og:image" content="https://meetpawlex.com/og-image.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="/" class="nav-logo">🐾 PawLex</a>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#about">About</a>
+      <a href="#waitlist" class="nav-cta">Join Waitlist</a>
+    </div>
+    <button class="nav-burger" onclick="toggleMenu()" aria-label="Menu">☰</button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#features" onclick="toggleMenu()">Features</a>
+    <a href="#pricing" onclick="toggleMenu()">Pricing</a>
+    <a href="#about" onclick="toggleMenu()">About</a>
+    <a href="#waitlist" onclick="toggleMenu()">Join Waitlist</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        NOW ACCEPTING BETA APPLICATIONS
+      </div>
+      <h1 class="hero-title">
+        The AI Co-Pilot for<br/>
+        <span class="title-accent">Pet Businesses</span>
+      </h1>
+      <p class="hero-sub">
+        Contracts. Compliance. Client management. All powered by AI —
+        built exclusively for groomers, vets, trainers, boarders & shelters.
+      </p>
+      <div class="hero-actions">
+        <a href="#waitlist" class="btn-primary">Join the Waitlist →</a>
+        <a href="#features" class="btn-ghost">See How It Works</a>
+      </div>
+      <div class="hero-proof">
+        <div class="proof-item"><strong>$150B</strong> market</div>
+        <div class="proof-div"></div>
+        <div class="proof-item"><strong>3.5M+</strong> pet businesses in the US</div>
+        <div class="proof-div"></div>
+        <div class="proof-item"><strong>Zero</strong> AI tools built for them</div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="ui-card">
+        <div class="ui-card-header">
+          <span class="ui-dot red"></span>
+          <span class="ui-dot yellow"></span>
+          <span class="ui-dot green"></span>
+          <span class="ui-title">PawLex Dashboard</span>
+        </div>
+        <div class="ui-body">
+          <div class="ui-stat-row">
+            <div class="ui-stat">
+              <div class="ui-stat-val">✅</div>
+              <div class="ui-stat-label">FL License Current</div>
+            </div>
+            <div class="ui-stat">
+              <div class="ui-stat-val">12</div>
+              <div class="ui-stat-label">Active Contracts</div>
+            </div>
+            <div class="ui-stat">
+              <div class="ui-stat-val">$8.4K</div>
+              <div class="ui-stat-label">This Month</div>
+            </div>
+          </div>
+          <div class="ui-alert">
+            <span class="ui-alert-icon">⚠️</span>
+            <div>
+              <div class="ui-alert-title">Grooming License renewal due in 14 days</div>
+              <div class="ui-alert-sub">Click to auto-generate renewal docs →</div>
+            </div>
+          </div>
+          <div class="ui-contract">
+            <div class="ui-contract-top">
+              <span>📄 New Client Contract</span>
+              <span class="ui-tag">AI Generated</span>
+            </div>
+            <div class="ui-contract-body">
+              Generating liability waiver for Max (Golden Retriever, 4yr)...
+              <div class="ui-progress"><div class="ui-progress-fill"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="problem" id="about">
+    <div class="container">
+      <div class="section-label">// THE PROBLEM</div>
+      <h2 class="section-title">Pet businesses are flying blind.</h2>
+      <div class="problem-grid">
+        <div class="problem-card">
+          <div class="problem-icon">📋</div>
+          <h3>Compliance Nightmares</h3>
+          <p>Licensing rules differ by state, county, and service type. One missed renewal = fines, shutdowns, lawsuits.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">📝</div>
+          <h3>Zero Legal Protection</h3>
+          <p>Most groomers and trainers operate with no proper contracts. One incident with a client's pet can be financially devastating.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">📊</div>
+          <h3>No Business Intelligence</h3>
+          <p>Spreadsheets, paper forms, and gut feelings. No visibility into revenue, retention, or growth opportunities.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">⏰</div>
+          <h3>Admin Eats Their Day</h3>
+          <p>Pet professionals spend 30%+ of their time on paperwork instead of the animals they love.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-label">// THE SOLUTION</div>
+      <h2 class="section-title">Everything your pet business needs.<br/>Nothing it doesn't.</h2>
+      <div class="features-grid">
+        <div class="feature-main">
+          <div class="feature-icon-lg">⚖️</div>
+          <h3>AI Contract Generator</h3>
+          <p>Generate legally-sound service agreements, liability waivers, and client intake forms in seconds. Tailored to your specific service type and state regulations.</p>
+          <ul class="feature-list">
+            <li>✦ Grooming service agreements</li>
+            <li>✦ Boarding & daycare contracts</li>
+            <li>✦ Training liability waivers</li>
+            <li>✦ Veterinary consent forms</li>
+          </ul>
+        </div>
+        <div class="feature-side">
+          <div class="feature-card">
+            <div class="feature-icon">🗺️</div>
+            <h4>50-State Compliance Tracker</h4>
+            <p>Real-time monitoring of licensing requirements, renewal deadlines, and regulatory changes for every state.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📈</div>
+            <h4>Revenue Intelligence</h4>
+            <p>AI-powered insights on pricing, client retention, seasonal trends, and growth opportunities specific to your market.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🐾</div>
+            <h4>Pet Health Records</h4>
+            <p>Unified pet profiles with AI-parsed health history, vaccination tracking, and behavioral notes across visits.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🛡️</div>
+            <h4>Incident Report Generator</h4>
+            <p>When things go wrong, generate comprehensive, legally-sound incident reports instantly to protect your business.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-label">// PRICING</div>
+      <h2 class="section-title">Simple, honest pricing.</h2>
+      <p class="section-sub">Start free during beta. Lock in founder pricing forever.</p>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="plan-name">Solo Paw</div>
+          <div class="plan-price">$79<span>/mo</span></div>
+          <div class="plan-desc">Perfect for independent groomers, trainers & pet sitters</div>
+          <ul class="plan-features">
+            <li>State licensing tracker</li>
+            <li>5 AI contracts per month</li>
+            <li>Client intake forms</li>
+            <li>Incident report generator</li>
+            <li>Basic analytics</li>
+          </ul>
+          <a href="#waitlist" class="plan-btn">Join Waitlist</a>
+        </div>
+        <div class="pricing-card featured">
+          <div class="plan-badge">MOST POPULAR</div>
+          <div class="plan-name">Pack Plan</div>
+          <div class="plan-price">$349<span>/mo</span></div>
+          <div class="plan-desc">For multi-staff salons, boarding facilities & growing vet practices</div>
+          <ul class="plan-features">
+            <li>Everything in Solo Paw</li>
+            <li>Unlimited AI contracts</li>
+            <li>Staff onboarding AI</li>
+            <li>Pet health records</li>
+            <li>Revenue & retention analytics</li>
+            <li>Priority support</li>
+          </ul>
+          <a href="#waitlist" class="plan-btn featured-btn">Join Waitlist</a>
+        </div>
+        <div class="pricing-card">
+          <div class="plan-name">Alpha Pack</div>
+          <div class="plan-price">$1,200<span>/mo</span></div>
+          <div class="plan-desc">For vet groups, grooming franchises & pet tech companies</div>
+          <ul class="plan-features">
+            <li>Everything in Pack Plan</li>
+            <li>Multi-location management</li>
+            <li>Custom AI model fine-tuning</li>
+            <li>API access</li>
+            <li>Dedicated success manager</li>
+            <li>Custom contract playbooks</li>
+          </ul>
+          <a href="#waitlist" class="plan-btn">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WAITLIST -->
+  <section class="waitlist" id="waitlist">
+    <div class="container waitlist-inner">
+      <div class="waitlist-left">
+        <div class="section-label">// JOIN THE WAITLIST</div>
+        <h2 class="section-title" style="color: var(--cream)">Be first.<br/>Get founder pricing.</h2>
+        <p class="waitlist-desc">
+          We're onboarding our first 100 beta users for free. Waitlist members lock in 50% off their first 6 months forever.
+        </p>
+        <div class="waitlist-perks">
+          <div class="perk">🎁 <strong>Free beta access</strong> — no credit card</div>
+          <div class="perk">💰 <strong>50% off</strong> — locked in for 6 months</div>
+          <div class="perk">🐾 <strong>Shape the product</strong> — your feedback builds it</div>
+          <div class="perk">📞 <strong>Direct line</strong> — to the founding team</div>
+        </div>
+      </div>
+      <div class="waitlist-right">
+        <form class="waitlist-form" id="waitlistForm" onsubmit="submitWaitlist(event)">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" placeholder="Jane Smith" required id="wlName"/>
+          </div>
+          <div class="form-group">
+            <label>Business Email</label>
+            <input type="email" placeholder="jane@mypetbiz.com" required id="wlEmail"/>
+          </div>
+          <div class="form-group">
+            <label>Business Type</label>
+            <select required id="wlType">
+              <option value="">Select your business...</option>
+              <option>Grooming Salon</option>
+              <option>Veterinary Clinic</option>
+              <option>Dog Trainer</option>
+              <option>Pet Boarding / Daycare</option>
+              <option>Animal Shelter</option>
+              <option>Pet Sitting / Dog Walking</option>
+              <option>Pet Retail</option>
+              <option>Other Pet Business</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>How many pets do you serve per month?</label>
+            <select id="wlVolume">
+              <option value="">Select range...</option>
+              <option>1–25</option>
+              <option>26–100</option>
+              <option>101–500</option>
+              <option>500+</option>
+            </select>
+          </div>
+          <button type="submit" class="submit-btn" id="submitBtn">
+            🐾 Join the Waitlist
+          </button>
+          <p class="form-note">No spam. No credit card. Just early access.</p>
+        </form>
+        <div class="success-msg" id="successMsg">
+          <div class="success-icon">🎉</div>
+          <h3>You're on the list!</h3>
+          <p>We'll reach out within 48 hours with your beta access details. Welcome to the pack.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">🐾 PawLex</div>
+        <p>The AI platform built for<br/>the pet services industry.</p>
+        <p class="footer-email">hello@meetpawlex.com</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#waitlist">Waitlist</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#about">About</a>
+          <a href="mailto:hello@meetpawlex.com">Contact</a>
+          <a href="privacy.html">Privacy</a>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <a href="https://instagram.com/meetpawlex" target="_blank">Instagram</a>
+          <a href="https://twitter.com/meetpawlex" target="_blank">Twitter / X</a>
+          <a href="https://linkedin.com/company/pawlex" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 PawLex. All rights reserved. Built with 🐾 in Miami, FL.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

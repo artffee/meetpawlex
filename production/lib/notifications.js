@@ -8,7 +8,7 @@ export function makeNotifier({ storage, env = process.env, send = fetch }) {
     const response = await send('https://api.resend.com/emails', {
       method: 'POST',
       headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, 'Content-Type': 'application/json', 'Idempotency-Key': `pawlex-waitlist-${record.id}` },
-      body: JSON.stringify({ from: env.WAITLIST_FROM_EMAIL, to: [env.WAITLIST_NOTIFY_TO], subject: 'New PawLex beta application', text: 'A beta application has been saved privately. Open your authenticated Vercel dashboard, choose PawLex, then Storage → pawlex-beta-applications → applications to review it.\n\nhttps://vercel.com/dashboard\n\nNo applicant information is included in this email.' }),
+      body: JSON.stringify({ from: env.WAITLIST_FROM_EMAIL, to: [env.WAITLIST_NOTIFY_TO], subject: 'New PawLex beta application', text: 'A beta application has been saved privately. Open your authenticated Vercel dashboard, choose PawLex, then Storage → pawlex-beta-applications → production/applications to review it.\n\nhttps://vercel.com/dashboard\n\nNo applicant information is included in this email.' }),
       signal: AbortSignal.timeout(5000)
     });
     if (!response.ok || !(await response.json()).id) throw new Error('notification-not-accepted');

@@ -14,6 +14,6 @@ async function walk(dir, prefix = '') {
 }
 await walk(path.join(root, 'production'));
 const commit = execFileSync('git', ['rev-parse', 'HEAD'], { cwd: root, encoding: 'utf8' }).trim();
-const payload = { name: 'pawlex', project: baseline.projectId, files: [...files.values()], projectSettings: { framework: null, nodeVersion: '24.x' }, meta: { githubRepo: 'artffee/meetpawlex', githubCommitSha: commit, baselineDeployment: baseline.deploymentId }, gitMetadata: { remoteUrl: 'https://github.com/artffee/meetpawlex', commitSha: commit, commitRef: 'fix/real-beta-waitlist', dirty: execFileSync('git', ['status', '--porcelain'], { cwd: root, encoding: 'utf8' }).trim().length > 0 } };
+const payload = { name: 'pawlex', project: baseline.projectId, files: [...files.values()], projectSettings: { framework: null, nodeVersion: '24.x' }, meta: { githubRepo: 'artffee/meetpawlex', githubCommitSha: commit, baselineDeployment: baseline.deploymentId }, gitMetadata: { remoteUrl: 'https://github.com/artffee/meetpawlex', commitSha: commit, commitRef: execFileSync('git', ['rev-parse', '--abbrev-ref', 'HEAD'], { cwd: root, encoding: 'utf8' }).trim(), dirty: execFileSync('git', ['status', '--porcelain'], { cwd: root, encoding: 'utf8' }).trim().length > 0 } };
 await writeFile(path.join(root, 'deployment/payload.json'), JSON.stringify(payload));
 console.log(`Prepared ${files.size} files; existing pages and scanner retained by content hash.`);

@@ -1,6 +1,6 @@
 # Waitlist verification — 2026-10-28
 
-## Automated backend tests: 30 passed
+## Automated backend tests: 34 passed
 
 `npm test` covers save-before-success, normalized email duplicates, concurrent
 submissions, non-overwriting duplicates, missing stored records, storage failure,
@@ -40,3 +40,10 @@ actual email delivery is not claimed or tested.
 The baseline scanner function and unrelated public pages remain referenced by
 unchanged deployment content hashes. Their product behavior is outside this
 waitlist test scope.
+
+Real preview mobile submission passed at 390 pixels with no JavaScript errors. Two
+concurrent duplicate requests both returned 200, followed by a 429 after five
+valid attempts. Four storage-adapter tests verify environment isolation, conflict
+confirmation, provider failure behavior and scoped listings. Preview browser
+traffic used the workspace proxy with a browser-only trust override; no site
+TLS setting was changed.

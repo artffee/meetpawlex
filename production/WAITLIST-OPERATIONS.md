@@ -5,9 +5,9 @@ Signup: https://meetpawlex.com/#waitlist
 ## Private applications
 
 In the authenticated Vercel dashboard, open project **pawlex** → Storage →
-**pawlex-beta-applications** → `applications/`. Each JSON record contains the
+**pawlex-beta-applications** → `production/applications/`. Each JSON record contains the
 original application, receipt time and versioned application-contact consent.
-The store is PRIVATE and US East (iad1). Do not change it to public or put
+Production and preview records and rate limits use separate prefixes. The store is PRIVATE and US East (iad1). Do not change it to public or put
 exports in GitHub. Only authorized Vercel account administrators may review it.
 
 Normalized email has one HMAC-derived pathname. Retries and case/whitespace
@@ -61,7 +61,7 @@ the dashboard. Review applications directly while email remains disabled.
 
 Use the private storage dashboard to locate the record by its contents, verify
 the requester using the original email, then delete that application and its
-matching `notified/` marker. Do not share public storage links. Keep beta access
+matching `production/notified/` marker. Do not share public storage links. Keep beta access
 communications separate from marketing, which needs its own consent workflow.
 
 Use only clearly labeled synthetic addresses at example.com for release tests.

@@ -1,0 +1,708 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>meetpawlex — AI Contracts, Compliance & Operations for Pet Businesses</title>
+<meta name="description" content="meetpawlex is an AI co-pilot for groomers, vets, trainers, boarders and pet sitters. 19 commands for contracts, 50-state compliance, incident reports and revenue analysis — built on Claude." />
+<meta name="theme-color" content="#ffffff" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="meetpawlex — AI for Pet Businesses" />
+<meta property="og:description" content="Contracts, compliance, operations and intelligence for the people who run pet businesses." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://meetpawlex.com/" />
+<meta property="og:image" content="https://meetpawlex.com/assets/og-image.svg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://meetpawlex.com/assets/og-image.svg" />
+
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+<link rel="canonical" href="https://meetpawlex.com/" />
+
+<!-- Google Search Console verification — paste the content value Search Console gives you and uncomment:
+<meta name="google-site-verification" content="REPLACE_WITH_VERIFICATION_CODE" />
+-->
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://meetpawlex.com/#organization",
+      "name": "meetpawlex",
+      "url": "https://meetpawlex.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://meetpawlex.com/assets/favicon.svg",
+        "width": 64,
+        "height": 64
+      },
+      "description": "AI contracts, compliance, and operations for pet businesses. Trained on 50-state pet-business law.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "hello@meetpawlex.com",
+        "contactType": "customer support"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://meetpawlex.com/#website",
+      "url": "https://meetpawlex.com",
+      "name": "meetpawlex",
+      "description": "AI contracts, compliance, and operations for pet businesses",
+      "publisher": { "@id": "https://meetpawlex.com/#organization" },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://meetpawlex.com/#webpage",
+      "url": "https://meetpawlex.com",
+      "name": "meetpawlex — AI Contracts, Compliance & Operations for Pet Businesses",
+      "isPartOf": { "@id": "https://meetpawlex.com/#website" },
+      "about": { "@id": "https://meetpawlex.com/#organization" },
+      "description": "meetpawlex is an AI co-pilot for groomers, vets, trainers, boarders and pet sitters. 19 commands for contracts, 50-state compliance, incident reports and revenue analysis — built on Claude."
+    }
+  ]
+}
+</script>
+
+<link rel="alternate" type="application/rss+xml" title="meetpawlex Field Notes" href="https://meetpawlex.com/feed.xml" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
+
+<link rel="stylesheet" href="assets/styles.css?v=20261028" />
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand"><span>meet</span>pawlex</a>
+    <ul class="nav-links">
+      <li><a href="features.html">Features</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="#audiences">Who it's for</a></li>
+      <li class="nav-cta-wrap"><a href="#waitlist" class="nav-cta">Join Waitlist</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero section">
+    <div class="wrap">
+      <p class="eyebrow">AI Platform for Pet Businesses &middot; Built for California Groomers First</p>
+
+      <div class="hero-grid">
+        <div>
+          <h1 class="h-display">
+            Scan your pet&#8209;business contract.<br />
+            <span class="accent">Get a Safety Score in 90 seconds.</span>
+          </h1>
+          <p class="hero-sub">
+            Free during beta. Built for California groomers first, then every state.
+            Paste any service agreement or waiver, we run a focused legal review, and
+            you get back a 0&ndash;100 Safety Score, the top risks, and the protections
+            you are missing. Two tiers when you are ready to upgrade.
+          </p>
+
+          <div class="cta-row">
+            <a href="scanner.html" class="btn btn-primary">Scan a Contract &mdash; Free</a>
+            <a href="#waitlist" class="btn btn-ghost">Join the Beta</a>
+          </div>
+
+          <!-- Pricing + credibility strip -->
+          <div class="hero-strip">
+            <div class="hero-strip-item">
+              <strong>$19 Lifetime</strong>
+              <span>DIY &middot; bring your own API key</span>
+            </div>
+            <div class="hero-strip-item">
+              <strong>$29 / mo Pro</strong>
+              <span>Hosted &middot; no install required</span>
+            </div>
+            <div class="hero-strip-item">
+              <strong>Free Beta</strong>
+              <span>First 100 &middot; 50% off either tier</span>
+            </div>
+          </div>
+
+          <p style="margin-top:1.25rem;font-size:0.95rem;color:var(--text-dim);">
+            Not sure which contract you need? <a href="find-your-contract.html" style="color:var(--text);text-decoration:underline;">Find yours by business type &rarr;</a>
+          </p>
+
+          <div class="hero-meta">
+            <div><strong>19</strong>AI Commands</div>
+            <div><strong>50</strong>States Covered</div>
+            <div><strong>5</strong>Parallel Agents</div>
+            <div><strong>&lt;60s</strong>Per Document</div>
+          </div>
+        </div>
+
+        <div class="terminal" aria-hidden="true">
+          <div class="terminal-bar">
+            <span class="terminal-dot"></span>
+            <span class="terminal-dot"></span>
+            <span class="terminal-dot"></span>
+            <span style="margin-left:0.6rem;">claude code &mdash; pawlex</span>
+          </div>
+          <div class="terminal-body">
+            <div><span class="prompt">$</span> <span class="cmd">/pawlex review boarding-agreement.pdf</span></div>
+            <span class="out dim">› dispatching 5 parallel agents...</span>
+            <span class="out"><span class="ok">✓</span> clause analyst &nbsp;&nbsp;&nbsp;&nbsp;28 clauses</span>
+            <span class="out"><span class="ok">✓</span> risk assessor &nbsp;&nbsp;&nbsp;&nbsp;3 high, 6 medium</span>
+            <span class="out"><span class="ok">✓</span> compliance check&nbsp;CA, animal bailee gap</span>
+            <span class="out"><span class="ok">✓</span> terms mapper&nbsp;&nbsp;&nbsp;&nbsp;14 obligations</span>
+            <span class="out"><span class="ok">✓</span> recommender &nbsp;&nbsp;&nbsp;&nbsp;7 paste-ready fixes</span>
+            <br/>
+            <span class="out">Contract Safety Score: <span class="warn">68 / 100 &mdash; B-</span></span>
+            <span class="out"><span class="bad">›</span> Missing: animal bailee coverage clause</span>
+            <span class="out"><span class="bad">›</span> Risk: unenforceable indemnity in CA</span>
+            <span class="out"><span class="warn">›</span> Watch: 90-day cancellation window</span>
+            <br/>
+            <div><span class="prompt">$</span> <span class="cmd">/pawlex report-pdf</span> <span class="dim">→ branded PDF ready</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROBLEM ===================== -->
+  <section class="section" id="problem">
+    <div class="wrap">
+      <p class="eyebrow">02 / The Problem</p>
+      <h2 class="h-section">The pet industry runs on <em>handshakes and hope.</em></h2>
+      <hr class="gold-rule" />
+      <p class="lede">
+        $150B in annual spending. 11% growth through every recession.
+        And the people running it are buried in paperwork, flying blind on compliance,
+        and operating without the legal protection they need.
+      </p>
+
+      <div class="problem-grid">
+        <div class="problem-card">
+          <span class="marker"></span>
+          <h3 class="h-card">Compliance Blind Spots</h3>
+          <p>Licensing rules differ by state, county, and service type. Most pet businesses don't know what they don't know &mdash; until a fine or shutdown notice arrives.</p>
+        </div>
+        <div class="problem-card danger">
+          <span class="marker"></span>
+          <h3 class="h-card">No Legal Armor</h3>
+          <p>74% of groomers and trainers operate without proper contracts. One incident with a client's pet can wipe out years of work overnight.</p>
+        </div>
+        <div class="problem-card">
+          <span class="marker"></span>
+          <h3 class="h-card">Zero Business Visibility</h3>
+          <p>Spreadsheets and gut feelings. No clarity on revenue trends, client retention, or where the business is leaking money every month.</p>
+        </div>
+        <div class="problem-card warn">
+          <span class="marker"></span>
+          <h3 class="h-card">Admin Steals the Day</h3>
+          <p>Pet professionals spend 30%+ of their time on paperwork &mdash; time stolen from the animals and clients they built the business to serve.</p>
+        </div>
+        <div class="problem-card danger">
+          <span class="marker"></span>
+          <h3 class="h-card">Insurance Gaps</h3>
+          <p>The #1 missed coverage in pet businesses is animal bailee &mdash; quietly excluded by most standard GL policies. Owners discover this at claim time.</p>
+        </div>
+        <div class="problem-card warn">
+          <span class="marker"></span>
+          <h3 class="h-card">Lawyers Cost $300/hr</h3>
+          <p>Local attorneys aren't scalable for a salon billing $80 a groom. The economics don't work &mdash; so most operators just go without.</p>
+        </div>
+      </div>
+
+      <p class="pull">
+        &ldquo;One missed license renewal. One client incident without a proper waiver.
+        One bad contract clause. Any of these can end a business overnight.&rdquo;
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== HOW IT WORKS ===================== -->
+  <section class="section" id="how">
+    <div class="wrap">
+      <p class="eyebrow">03 / How It Works</p>
+      <h2 class="h-section">Install once. <em>Run any command in seconds.</em></h2>
+      <hr class="gold-rule" />
+      <p class="lede">
+        meetpawlex installs into Claude Code with one terminal command. After that, every command
+        in this section is one slash away &mdash; with the right model picked for you automatically.
+      </p>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3>Install</h3>
+          <p>One curl command installs all 19 skills, 5 agents, and the PDF generator into Claude Code.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3>Connect</h3>
+          <p>Link your Anthropic API key. The router auto-selects Sonnet 4 or Haiku per command.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3>Run</h3>
+          <p>Type <code style="font-family:var(--font-mono);color:var(--gold);">/pawlex review</code> &mdash; or any of 18 others. Output in under 60 seconds.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <h3>Export</h3>
+          <p>Generate a branded, client-ready PDF from the last analysis with <code style="font-family:var(--font-mono);color:var(--gold);">/pawlex report-pdf</code>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== COMMANDS ===================== -->
+  <section class="section" id="commands">
+    <div class="wrap">
+      <p class="eyebrow">04 / Complete Command Reference</p>
+      <h2 class="h-section">19 commands. <em>One co&#8209;pilot.</em></h2>
+      <hr class="gold-rule" />
+      <p class="lede">
+        Each command is routed to the cheapest Claude model that can do the job well.
+        Legal documents go to Sonnet 4. Templates go to Haiku 3.5. Everything else lands on Haiku 4.5.
+      </p>
+
+      <div class="cmd-tabs" role="tablist">
+        <button class="cmd-tab active" data-target="legal">Contract &amp; Legal</button>
+        <button class="cmd-tab" data-target="comply">Compliance &amp; Insurance</button>
+        <button class="cmd-tab" data-target="ops">Operations</button>
+        <button class="cmd-tab" data-target="biz">Business Intelligence</button>
+        <button class="cmd-tab" data-target="content">Content &amp; Reports</button>
+      </div>
+
+      <!-- Legal -->
+      <div data-cmd-group="legal">
+        <table class="cmd-table">
+          <thead>
+            <tr><th style="width:22%;">Command</th><th style="width:14%;">Model</th><th>What it does</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="cmd-name">/pawlex review</td><td><span class="model-pill sonnet">Sonnet 4</span></td><td><strong>Flagship.</strong> Full contract review with 5 parallel agents. Returns a Safety Score, risk analysis, missing protections, and a negotiation priority list.</td></tr>
+            <tr><td class="cmd-name">/pawlex contracts</td><td><span class="model-pill sonnet">Sonnet 4</span></td><td>Generate a complete service agreement for grooming, boarding, training, vet, daycare, shelter, sitting, or walking.</td></tr>
+            <tr><td class="cmd-name">/pawlex waiver</td><td><span class="model-pill sonnet">Sonnet 4</span></td><td>Liability waiver tailored to your service. Flags clauses unenforceable in your state.</td></tr>
+            <tr><td class="cmd-name">/pawlex nda</td><td><span class="model-pill sonnet">Sonnet 4</span></td><td>NDA for vendor, employee, partner or investor contexts.</td></tr>
+            <tr><td class="cmd-name">/pawlex compare</td><td><span class="model-pill sonnet">Sonnet 4</span></td><td>Side-by-side contract comparison. Flags dangerous changes, removed protections, risky additions.</td></tr>
+            <tr><td class="cmd-name">/pawlex missing</td><td><span class="model-pill sonnet">Sonnet 4</span></td><td>Finds protections that <em>should</em> be in the contract but aren't &mdash; with paste-ready replacement clauses.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Compliance -->
+      <div data-cmd-group="comply" style="display:none;">
+        <table class="cmd-table">
+          <thead>
+            <tr><th style="width:22%;">Command</th><th style="width:14%;">Model</th><th>What it does</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="cmd-name">/pawlex compliance</td><td><span class="model-pill sonnet">Sonnet 4</span></td><td>Full 50-state compliance audit. Lists every required license, permit and certificate &mdash; with costs, renewal dates and issuing agencies.</td></tr>
+            <tr><td class="cmd-name">/pawlex insurance</td><td><span class="model-pill sonnet">Sonnet 4</span></td><td>Insurance coverage guide. Surfaces the animal bailee gap &mdash; the #1 missed coverage in pet businesses.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Ops -->
+      <div data-cmd-group="ops" style="display:none;">
+        <table class="cmd-table">
+          <thead>
+            <tr><th style="width:22%;">Command</th><th style="width:14%;">Model</th><th>What it does</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="cmd-name">/pawlex incident</td><td><span class="model-pill haiku45">Haiku 4.5</span></td><td>Legally-sound incident report in 60 seconds. Injury, escape, fight, illness, complaint or property damage.</td></tr>
+            <tr><td class="cmd-name">/pawlex onboard</td><td><span class="model-pill haiku35">Haiku 3.5</span></td><td>Staff onboarding protocol for groomer, vet tech, boarding staff, trainer, receptionist or manager.</td></tr>
+            <tr><td class="cmd-name">/pawlex records</td><td><span class="model-pill haiku35">Haiku 3.5</span></td><td>Pet health record template with vaccination tracker, medication log and behavioral notes.</td></tr>
+            <tr><td class="cmd-name">/pawlex checklist</td><td><span class="model-pill haiku35">Haiku 3.5</span></td><td>Printable compliance checklist with checkboxes, frequencies, costs and issuing agencies.</td></tr>
+            <tr><td class="cmd-name">/pawlex vaccine</td><td><span class="model-pill haiku45">Haiku 4.5</span></td><td>Vaccine requirement tracker by species, service type and state &mdash; with intake form language.</td></tr>
+            <tr><td class="cmd-name">/pawlex staff-review</td><td><span class="model-pill haiku45">Haiku 4.5</span></td><td>HR-safe performance review template with legally-defensible language and a 90-day development plan.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Biz -->
+      <div data-cmd-group="biz" style="display:none;">
+        <table class="cmd-table">
+          <thead>
+            <tr><th style="width:22%;">Command</th><th style="width:14%;">Model</th><th>What it does</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="cmd-name">/pawlex revenue</td><td><span class="model-pill haiku45">Haiku 4.5</span></td><td>Revenue analysis with a 90-day growth plan and specific dollar upside per opportunity.</td></tr>
+            <tr><td class="cmd-name">/pawlex pricing</td><td><span class="model-pill haiku45">Haiku 4.5</span></td><td>Market rate benchmarks plus a pricing strategy. Includes package recommendations and quick-win price changes.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Content -->
+      <div data-cmd-group="content" style="display:none;">
+        <table class="cmd-table">
+          <thead>
+            <tr><th style="width:22%;">Command</th><th style="width:14%;">Model</th><th>What it does</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="cmd-name">/pawlex plain</td><td><span class="model-pill haiku35">Haiku 3.5</span></td><td>Translate every clause from legalese to plain English. Flags Normal / Watch Out / Red Flag.</td></tr>
+            <tr><td class="cmd-name">/pawlex social</td><td><span class="model-pill haiku35">Haiku 3.5</span></td><td>Three ready-to-post social variations for Instagram, TikTok, Facebook, Google Business, Yelp or LinkedIn.</td></tr>
+            <tr><td class="cmd-name">/pawlex report-pdf</td><td><span class="model-pill sonnet">Sonnet 4</span></td><td>Branded PDF from the last meetpawlex analysis. Client-ready output with score gauges and tables.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 5 AGENTS ===================== -->
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow">05 / The 5-Agent Review System</p>
+      <h2 class="h-section">Five specialists, <em>working in parallel.</em></h2>
+      <hr class="gold-rule" />
+      <p class="lede">
+        The flagship <code style="font-family:var(--font-mono);color:var(--gold);">/pawlex review</code> command launches five specialized AI agents simultaneously,
+        each analyzing the contract from a different angle. The results synthesize into a single
+        Contract Safety Score (0&ndash;100) with a letter grade.
+      </p>
+
+      <div class="agents">
+        <div class="agent">
+          <div class="agent-num">01</div>
+          <h4>Clause Analyst</h4>
+          <div class="weight">Weight 20%</div>
+          <p>Identifies and categorizes every clause. Flags pet-industry-specific language.</p>
+        </div>
+        <div class="agent">
+          <div class="agent-num">02</div>
+          <h4>Risk Assessor</h4>
+          <div class="weight">Weight 25%</div>
+          <p>Scores each clause HIGH / MEDIUM / LOW with financial exposure estimates.</p>
+        </div>
+        <div class="agent">
+          <div class="agent-num">03</div>
+          <h4>Compliance Checker</h4>
+          <div class="weight">Weight 20%</div>
+          <p>Checks state regulations, GDPR/CCPA, ADA, and consumer protection laws.</p>
+        </div>
+        <div class="agent">
+          <div class="agent-num">04</div>
+          <h4>Terms Mapper</h4>
+          <div class="weight">Weight 15%</div>
+          <p>Maps obligations, deadlines, payment triggers, and renewal dates.</p>
+        </div>
+        <div class="agent">
+          <div class="agent-num">05</div>
+          <h4>Recommendations</h4>
+          <div class="weight">Weight 20%</div>
+          <p>Generates specific fixes with paste-ready replacement language.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== COST / ROUTING ===================== -->
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow">06 / Smart Model Routing</p>
+      <h2 class="h-section">Enterprise AI. <em>Small-business pricing.</em></h2>
+      <hr class="gold-rule" />
+      <p class="lede">
+        Three cost-reduction strategies cut roughly half the spend versus a naive all-Sonnet build.
+        That's the difference between this being a tool independent groomers can afford and one only chains can.
+      </p>
+
+      <div class="cost-grid">
+        <ul class="cost-list">
+          <li>
+            <span class="label">Haiku 3.5 <small>Templates, formatting, social content</small></span>
+            <span class="val">~73% off</span>
+          </li>
+          <li>
+            <span class="label">Haiku 4.5 <small>Incident reports, revenue, pricing</small></span>
+            <span class="val">~67% off</span>
+          </li>
+          <li>
+            <span class="label">Sonnet 4 <small>Legal docs, compliance, flagship review</small></span>
+            <span class="val">baseline</span>
+          </li>
+          <li>
+            <span class="label">Prompt caching <small>System prompt + skills cached after first call</small></span>
+            <span class="val">~30% off</span>
+          </li>
+          <li>
+            <span class="label">Batch API <small>Non-urgent commands, 24-hour turnaround</small></span>
+            <span class="val">~50% off</span>
+          </li>
+        </ul>
+
+        <div class="terminal" aria-hidden="true">
+          <div class="terminal-bar">
+            <span class="terminal-dot"></span>
+            <span class="terminal-dot"></span>
+            <span class="terminal-dot"></span>
+            <span style="margin-left:0.6rem;">monthly cost &mdash; 200 customers @ 50 calls</span>
+          </div>
+          <div class="terminal-body">
+            <span class="out">all sonnet 4 (naive) &nbsp;&nbsp;&nbsp;<span class="bad">$315 / mo</span></span>
+            <span class="out">+ model routing &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="warn">$190 / mo</span></span>
+            <span class="out">+ prompt caching &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="warn">$158 / mo</span></span>
+            <span class="out">+ batch api &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="ok">$133 / mo</span></span>
+            <br/>
+            <span class="out dim"># savings vs naive ──────────── <span class="ok">~58%</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== AUDIENCES ===================== -->
+  <section class="section" id="audiences">
+    <div class="wrap">
+      <p class="eyebrow">07 / Built for Six Kinds of Pet Business</p>
+      <h2 class="h-section">Whoever you are, <em>meetpawlex speaks your language.</em></h2>
+      <hr class="gold-rule" />
+
+      <div class="audiences">
+        <div class="audience">
+          <h3>Grooming Salons</h3>
+          <ul>
+            <li>Liability waivers per appointment</li>
+            <li>State cosmetology compliance</li>
+            <li>Dematting &amp; coat disclosures</li>
+            <li>Grooming injury incident reports</li>
+            <li>Vaccination intake forms</li>
+          </ul>
+        </div>
+        <div class="audience">
+          <h3>Veterinary Clinics</h3>
+          <ul>
+            <li>Treatment consent by procedure</li>
+            <li>VCPR establishment</li>
+            <li>Controlled substance protocols</li>
+            <li>Multi-state telehealth licensing</li>
+            <li>Emergency authorization language</li>
+          </ul>
+        </div>
+        <div class="audience">
+          <h3>Trainers &amp; Behaviorists</h3>
+          <ul>
+            <li>Training contracts with methodology</li>
+            <li>No-results-guarantee protection</li>
+            <li>Aggression history disclosure</li>
+            <li>Board-and-train agreements</li>
+            <li>Behavior modification waivers</li>
+          </ul>
+        </div>
+        <div class="audience">
+          <h3>Boarding &amp; Daycare</h3>
+          <ul>
+            <li>Boarding agreement + abandonment</li>
+            <li>Vaccination verification tracking</li>
+            <li>Temperament test documentation</li>
+            <li>Holiday surcharge &amp; cancellation</li>
+            <li>Emergency &amp; vet authorization</li>
+          </ul>
+        </div>
+        <div class="audience">
+          <h3>Shelters &amp; Rescues</h3>
+          <ul>
+            <li>Adoption contracts with return policy</li>
+            <li>Foster care agreements</li>
+            <li>Volunteer liability waivers</li>
+            <li>Spay/neuter compliance</li>
+            <li>Nonprofit documentation</li>
+          </ul>
+        </div>
+        <div class="audience">
+          <h3>Sitters &amp; Walkers</h3>
+          <ul>
+            <li>Key holding &amp; home access</li>
+            <li>GPS tracking consent</li>
+            <li>Solo vs group walk liability</li>
+            <li>Insurance minimum guidance</li>
+            <li>Client pet profile templates</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== NUMBERS ===================== -->
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow">08 / Numbers That Matter</p>
+      <h2 class="h-section">A market that <em>doesn't slow down.</em></h2>
+      <hr class="gold-rule" />
+
+      <div class="numbers">
+        <div class="metric">
+          <div class="big">$150B</div>
+          <h4>Total Market</h4>
+          <p>Global pet industry annual spending, 2025.</p>
+        </div>
+        <div class="metric">
+          <div class="big">11%</div>
+          <h4>Annual Growth</h4>
+          <p>Sustained through recessions, COVID, inflation.</p>
+        </div>
+        <div class="metric">
+          <div class="big">3.5M+</div>
+          <h4>US Businesses</h4>
+          <p>Groomers, vets, trainers, boarders, shelters, walkers.</p>
+        </div>
+        <div class="metric">
+          <div class="big">74%</div>
+          <h4>Operate Without Contracts</h4>
+          <p>The market meetpawlex was built to protect.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WAITLIST ===================== -->
+  <section class="section waitlist" id="waitlist">
+    <div class="wrap">
+      <p class="eyebrow">09 / Free Beta</p>
+
+      <div class="waitlist-grid">
+        <div>
+          <h2 class="h-section">First 100 businesses get in <em>free.</em></h2>
+          <hr class="gold-rule" />
+          <p class="lede">
+            Every command. Every state. Every agent. Free during beta in exchange for honest feedback
+            &mdash; and a testimonial if meetpawlex earns it.
+          </p>
+          <p style="color:var(--cream-dim);font-size:0.95rem;">
+            <strong style="color:var(--cream);">What happens next:</strong> your application is saved securely and confirmed here.
+            We will use your business email to contact you when beta access is available.
+            Applying does not guarantee a place or a response date.
+          </p>
+          <p style="color:var(--cream-faint);font-size:0.85rem;margin-top:1.5rem;">
+            meetpawlex assists. It does not replace a licensed attorney for jurisdiction-specific advice.
+          </p>
+        </div>
+
+        <form class="form" id="waitlist-form" data-endpoint="/api/waitlist" novalidate>
+          <div class="field-row">
+            <div class="field">
+              <label for="first_name">First Name <span class="req">*</span></label>
+              <input id="first_name" name="first_name" maxlength="80" type="text" autocomplete="given-name" required />
+            </div>
+            <div class="field">
+              <label for="last_name">Last Name <span class="req">*</span></label>
+              <input id="last_name" name="last_name" maxlength="80" type="text" autocomplete="family-name" required />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="email">Business Email <span class="req">*</span></label>
+            <input id="email" name="email" maxlength="254" type="email" autocomplete="email" inputmode="email" autocapitalize="none" spellcheck="false" placeholder="you@yourbusiness.com" required />
+          </div>
+
+          <div class="field">
+            <label for="business_name">Business Name <span class="opt">(optional)</span></label>
+            <input id="business_name" name="business_name" maxlength="160" type="text" autocomplete="organization" />
+          </div>
+
+          <div class="field">
+            <label for="business_type">Business Type <span class="req">*</span></label>
+            <select id="business_type" name="business_type" required>
+              <option value="">Select one&hellip;</option>
+              <option value="grooming">Grooming Salon / Independent Groomer</option>
+              <option value="vet">Veterinary Clinic / Animal Hospital</option>
+              <option value="trainer">Dog Trainer / Behaviorist</option>
+              <option value="boarding">Boarding / Daycare</option>
+              <option value="shelter">Shelter / Rescue</option>
+              <option value="sitter">Pet Sitter / Dog Walker</option>
+              <option value="multi">Multi-service / Franchise</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="monthly_customers">Estimated Monthly Customers <span class="opt">(optional)</span></label>
+            <select id="monthly_customers" name="monthly_customers">
+              <option value="">Select range&hellip;</option>
+              <option>1–25</option><option>26–100</option><option>101–500</option><option>500+</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="challenge">Biggest Challenge <span class="opt">(optional)</span></label>
+            <textarea id="challenge" name="challenge" maxlength="1500" placeholder="What's the most painful paperwork or compliance issue in your business right now?"></textarea>
+          </div>
+
+          <!-- Honeypot -->
+          <div style="position:absolute;left:-10000px;" aria-hidden="true">
+            <label>Website <input name="website" type="text" tabindex="-1" autocomplete="off" /></label>
+          </div>
+
+          <label class="waitlist-consent" for="consent">
+            <input id="consent" name="consent" type="checkbox" required />
+            <span>I agree that PawLex may store these details and email me about my beta application. I have read the <a href="privacy.html">privacy notice</a>. This does not sign me up for marketing.</span>
+          </label>
+          <noscript><p>Please enable JavaScript to submit this application securely.</p></noscript>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Join the Beta Waitlist</button>
+          <div class="form-status" id="form-status" tabindex="-1" role="status" aria-live="polite"></div>
+
+          <p class="fine">
+            Applications are private. We use your details to manage beta access.
+            To withdraw your application or request deletion, email <a href="mailto:hello@meetpawlex.com">hello@meetpawlex.com</a>.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:0.75rem;"><span>meet</span>pawlex</div>
+        <p style="color:var(--cream-dim);font-size:0.92rem;max-width:34ch;margin:0;">
+          AI contracts, compliance, and operations for pet businesses. Trained on 50-state pet-business law.
+        </p>
+      </div>
+      <div>
+        <h5>Product</h5>
+        <ul>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="#waitlist">Free beta</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="mailto:hello@meetpawlex.com">hello@meetpawlex.com</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Disclaimer</h5>
+        <ul>
+          <li style="color:var(--cream-faint);font-size:0.82rem;line-height:1.5;list-style:none;">
+            meetpawlex is a software tool, not a law firm. Output is informational. Consult a licensed attorney for jurisdiction-specific advice.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025&ndash;<span id="year">2026</span> meetpawlex &middot; meetpawlex.com</span>
+      <span>Confidential &middot; All rights reserved</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/config.js?v=20261028"></script>
+<script src="assets/script.js?v=20261028" defer></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "pawlex-deployment-workflow",
+  "private": true,
+  "scripts": { "test": "npm test --prefix production", "test:browser": "node tests/browser.cjs", "deployment:prepare": "node scripts/deployment-payload.mjs" },
+  "devDependencies": { "playwright": "1.62.1" }
+}

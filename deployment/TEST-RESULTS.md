@@ -47,3 +47,31 @@ valid attempts. Four storage-adapter tests verify environment isolation, conflic
 confirmation, provider failure behavior and scoped listings. Preview browser
 traffic used the workspace proxy with a browser-only trust override; no site
 TLS setting was changed.
+
+## Final production release: verified
+
+- URL: https://meetpawlex.com/#waitlist
+- Vercel deployment: `dpl_7opCuaiTMWhWVGf3zG6Yt4fnkcFF` (READY, production).
+- Deployed source commit: `f6b7afd31cfa308a77593d3e0d75efbbe8d5e9be`.
+- GitHub changes merged in PRs #1 and #2.
+- Real production API: success and duplicate returned HTTP 200 with acceptance;
+  missing consent, honeypot, invalid email and tampered token returned HTTP 400;
+  cross-origin returned 403; maintenance returned 401 without its credential and
+  200 with it.
+- Real mobile production form at 390 × 844 pixels submitted successfully, cleared
+  fields only after acceptance, and produced no JavaScript errors.
+- Home, privacy, features, pricing, resources and scanner pages returned 200.
+  The live home and JavaScript contain no fake-success path or 48-hour promise.
+- Production function error/warning log query after the checks returned no matches.
+- Provider inspection confirmed the store remains private. Ten objects were
+  present after all tests: two labeled synthetic application records (one from
+  the original preview checks at the root; one in `production/applications/`)
+  and eight rate markers. Three production submissions created one application.
+  These synthetic QA records are intentionally retained as verification evidence;
+  administrators may delete them in the private storage dashboard. The five
+  original unprefixed QA rate markers can also be deleted there.
+- The temporary preview share link was revoked after verification.
+
+Email alerts remain disabled. Real email delivery is unverified and requires the
+sender-domain, sending-key and notification-inbox setup described in
+`production/WAITLIST-OPERATIONS.md`. On-page acceptance is working now.

@@ -1,3 +1,12 @@
+# Current production workflow
+
+The live site is newer than the legacy files below. For the working waitlist, see
+[deployment instructions](deployment/README.md) and
+[private application operations](production/WAITLIST-OPERATIONS.md).
+Do not publish the legacy root files to meetpawlex.com.
+
+---
+
 # 🐾 PawLex — AI Platform for Pet Businesses
 
 > The OpenVLaw for the $150B pet services industry.

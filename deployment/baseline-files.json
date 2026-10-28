@@ -1,0 +1,135 @@
+{
+  "deploymentId": "dpl_GHqrG8CrhdsvRYnuRD6v7bPomezs",
+  "projectId": "prj_IZajiAgKdj5TbemOknthfpAYm0F2",
+  "teamId": "team_h9a6UAtdfEyOIHcS9zYtSfOm",
+  "files": [
+    {
+      "file": "404.html",
+      "sha": "1e90a392b4348846b02b2eb332581f4819c01320"
+    },
+    {
+      "file": "api/scan.js",
+      "sha": "a1abc0d826aad2cc7bdb3d2496e665503117867a"
+    },
+    {
+      "file": "assets/config.js",
+      "sha": "44a9dc5184579923b714e27ae8ca5c7c6d2b28c0"
+    },
+    {
+      "file": "assets/favicon.svg",
+      "sha": "98e1bc25e20a1240d01c7f61f0590c4be1b1ea7a"
+    },
+    {
+      "file": "assets/og-image.svg",
+      "sha": "9fb184ac32f93b0dd3b27ac5510898d5e107962f"
+    },
+    {
+      "file": "assets/script.js",
+      "sha": "133b88de974c14f7de87fd7cf0a2e42825ce7054"
+    },
+    {
+      "file": "assets/styles.css",
+      "sha": "7bb7b795322d72065f940e366d939c3007090b72"
+    },
+    {
+      "file": "california-grooming.html",
+      "sha": "820ed7cc1227754d699e5e000ab309763da81380"
+    },
+    {
+      "file": "california-training.html",
+      "sha": "1b964dce0f0221d10f536de64345e56e2171555f"
+    },
+    {
+      "file": "features.html",
+      "sha": "4ae942aa7e45c2767bcd97048d1335fd0370aa53"
+    },
+    {
+      "file": "feed.xml",
+      "sha": "0523e29293edd1d7f855172ae645c2125e5ac9bb"
+    },
+    {
+      "file": "find-your-contract.html",
+      "sha": "89faa443a8330f6245c71f95d26bda41bd6a2585"
+    },
+    {
+      "file": "florida-boarding.html",
+      "sha": "9ad3234f88d3bc995d69fb3722f3a0401b536705"
+    },
+    {
+      "file": "index.html",
+      "sha": "b8631e5747c5f26ea687053e6b87b0a02438794f"
+    },
+    {
+      "file": "package.json",
+      "sha": "87eeef5801742f1a101bc4c686476977d3dc52c7"
+    },
+    {
+      "file": "posts/animal-bailee-gap.html",
+      "sha": "e552a0d436b35d83d714f0ae699858d3074a13e6"
+    },
+    {
+      "file": "posts/california-pet-business-indemnity.html",
+      "sha": "993cae36e073c1da9b889ebfd3399313f55b60d7"
+    },
+    {
+      "file": "posts/florida-boarding-licensing-2026.html",
+      "sha": "1c596c2e60bd569ddec61a79ac18c07a9e8a504e"
+    },
+    {
+      "file": "posts/incident-report-protects-court.html",
+      "sha": "6825a4fa0e601c487ad1c5df90fb64b101a2f752"
+    },
+    {
+      "file": "posts/large-breed-grooming-pricing.html",
+      "sha": "93b5d0407cce0de3863c4d875015bda6107fb3c6"
+    },
+    {
+      "file": "posts/no-results-guarantee-trainers.html",
+      "sha": "f900f684d4fd5a5dc0249bb646e0a7d7d28bc03a"
+    },
+    {
+      "file": "posts/six-clauses-missing-grooming.html",
+      "sha": "0cacf5bb014e6380e15c878210c707cb4ce55ac2"
+    },
+    {
+      "file": "posts/telehealth-vet-multistate.html",
+      "sha": "6e7187d99c0522be86082fde85cda8a553be85b3"
+    },
+    {
+      "file": "posts/vaccination-verification-boarding.html",
+      "sha": "2d6fd96e3463a72a617f58283fb762e36c7b3277"
+    },
+    {
+      "file": "pricing.html",
+      "sha": "11bbd49356196fd9797251b7ecf52adbaefec8cc"
+    },
+    {
+      "file": "privacy.html",
+      "sha": "596efc61b15854a86911f3e01d096a6c79ce18f3"
+    },
+    {
+      "file": "resources.html",
+      "sha": "67bccebf5668b998cda34b6de29e4df8bcc49585"
+    },
+    {
+      "file": "robots.txt",
+      "sha": "9739bb29d97c4b285bf7f21f9728cbbb543187da"
+    },
+    {
+      "file": "scanner.html",
+      "sha": "f9f0845c830ec9f86336174b018c426d4dbbafef"
+    },
+    {
+      "file": "sitemap.xml",
+      "sha": "fe9b181850d6bbe2f45cfa0daf51ffbd1957169c"
+    },
+    {
+      "file": "texas-boarding.html",
+      "sha": "7c4b0b2779a74e69c5c618256748ef9894f0b64f"
+    },
+    {
+      "file": "vercel.json",
+      "sha": "47c534021a95a9ca58dc9bfe8da4aab9d5874636"
+    }
+  ]
+}

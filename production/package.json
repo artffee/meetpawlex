@@ -1,0 +1,9 @@
+{
+  "name": "pawlex-site",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": "24.x" },
+  "scripts": { "test": "node --test ../tests/*.test.mjs" },
+  "dependencies": { "@vercel/blob": "2.7.0" }
+}

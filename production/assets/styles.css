@@ -2151,3 +2151,5 @@ a:hover { color: var(--text-dim); }
 .form button:disabled { cursor:wait; opacity:0.7; }
 @media (max-width:600px) { .form input:not([type="checkbox"]), .form select, .form textarea { font-size:16px; min-height:44px; } .form .field-row { grid-template-columns:1fr; } }
 .form-status.ok { color:#166534; }
+
+.discovery-faq{max-width:800px}.discovery-faq details{padding:18px 0;border-bottom:1px solid #ddd}.discovery-faq summary{cursor:pointer;font-weight:600;min-height:44px}.discovery-faq p{line-height:1.7}

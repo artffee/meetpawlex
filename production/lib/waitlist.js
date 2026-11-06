@@ -31,7 +31,7 @@ export function checkChallenge(token, secret, ip, now = Date.now()) {
 }
 export function validate(input) {
   if (!input || typeof input !== 'object' || Array.isArray(input)) throw new RequestError(400, 'Please check the form and try again.');
-  const allowed = ['first_name', 'last_name', 'email', 'business_name', 'business_type', 'monthly_customers', 'challenge', 'website', 'consent', 'verification'];
+  const allowed = ['first_name', 'last_name', 'email', 'business_name', 'business_type', 'monthly_customers', 'challenge', 'website', 'consent', 'verification', 'discoverySource'];
   if (Object.keys(input).some(k => !allowed.includes(k))) throw new RequestError(400, 'Please reload the page and try again.');
   if (input.website) throw new RequestError(400, 'We could not accept this application. Please reload the page and try again.');
   const read = (key, max, required = false) => {
@@ -45,10 +45,12 @@ export function validate(input) {
     first_name: read('first_name', 80, true), last_name: read('last_name', 80, true),
     email: read('email', 254, true).toLowerCase(), business_name: read('business_name', 160),
     business_type: read('business_type', 30, true), monthly_customers: read('monthly_customers', 20),
+    discoverySource: read('discoverySource', 40),
     challenge: read('challenge', 1500)
   };
   if (!/^[^\s@<>]+@[^\s@<>]+\.[^\s@<>]+$/.test(data.email)) throw new RequestError(400, 'Please enter a valid business email.');
   if (!BUSINESS_TYPES.includes(data.business_type) || !VOLUMES.includes(data.monthly_customers)) throw new RequestError(400, 'Please choose one of the listed options.');
+  if (!["", "Google Search / Maps", "ChatGPT", "Gemini", "Perplexity", "Other AI assistant", "Social media", "Friend / referral", "Other"].includes(data.discoverySource)) throw new RequestError(400, 'Please choose a listed discovery source.');
   if (input.consent !== true) throw new RequestError(400, 'Please agree to application-related contact and the privacy notice.');
   return data;
 }

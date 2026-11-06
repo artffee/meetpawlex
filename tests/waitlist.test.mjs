@@ -102,3 +102,5 @@ test('email errors remain retryable', async () => {
   const storage = memoryStore(); const notify = makeNotifier({ storage, env: { RESEND_API_KEY: 'test', WAITLIST_NOTIFY_TO: 'owner@example.com', WAITLIST_FROM_EMAIL: 'notify@example.com' }, send: async () => ({ ok: false }) });
   await assert.rejects(notify({ id: 'test' })); assert.equal(storage.records.size, 0);
 });
+test('optional discovery source is saved privately and never returned',async()=>{const h=harness();const r=await h.request({...valid(),discoverySource:'ChatGPT'});assert.equal(r.statusCode,200);const record=[...h.storage.records].find(([k])=>k.startsWith('applications/'))[1];assert.equal(record.discoverySource,'ChatGPT');assert.deepEqual(r.body,{accepted:true});});
+test('unknown discovery source is rejected before storage',async()=>{const h=harness();const r=await h.request({...valid(),discoverySource:'https://private.example'});assert.equal(r.statusCode,400);assert.equal(h.storage.records.size,0);});
